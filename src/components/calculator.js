@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 class Display extends React.Component {
   render() {
@@ -28,9 +29,9 @@ class CalculatorButton extends React.Component {
 }
 
 CalculatorButton.propTypes = {
-  size: PropTypes.string,
-  type: PropTypes.string,
-  label: PropTypes.string,
+  size: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 class ButtonsContainer extends React.Component {
