@@ -1,9 +1,8 @@
 import React from 'react';
 
 class Display extends React.Component {
-  
   render() {
-    const {value} = this.props;
+    const { value } = this.props;
     return (
       <div className="display">
         <h1>{value}</h1>
@@ -15,12 +14,15 @@ class Display extends React.Component {
 Display.defaultProps = {
   value: 0
 };
+Display.propTypes = {
+  value: PropTypes.string,
+}
 
 class CalculatorButton extends React.Component {
-  render () {
+  render() {
     const classes = `${this.props.size} ${this.props.type} button`;
     return (
-      <button className={classes} >{this.props.label}</button>
+      <button type="button" className={classes}>{this.props.label}</button>
     );
   }
 }
@@ -31,11 +33,10 @@ CalculatorButton.propTypes = {
   label: PropTypes.string,
 };
 
-
 class ButtonsContainer extends React.Component {
-  render () {
+  render() {
     return (
-      <div className='buttonsContainer'>
+      <div className="buttonsContainer">
         <CalculatorButton type="characterButton" size="s1" label="AC" />
         <CalculatorButton type="characterButton" size="s1" label="+/-" />
         <CalculatorButton type="characterButton" size="s1" label="%" />
