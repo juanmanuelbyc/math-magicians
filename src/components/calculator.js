@@ -7,19 +7,17 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = {total:null, next:null, operation:null};
+    this.state = { total: null, next: null, operation: null };
   }
 
   handleClick(button) {
-    const newState = calculate(this.state,button);
+    const newState = calculate(this.state, button);
     console.log(newState);
     this.setState(newState);
   }
 
   render() {
-    const next = this.state.next;
-    const total = this.state.total;
-    const operation = this.state.operation;
+    const { next, total, operation } = this.state;
     return (
       <div className="calculatorContainer">
         <Display next={next} total={total} operation={operation} />
@@ -43,7 +41,7 @@ class Calculator extends React.Component {
           <CalculatorButton type="characterButton" size="s2" label="0" handleClick={this.handleClick} />
           <CalculatorButton type="characterButton" size="s1" label="." handleClick={this.handleClick} />
           <CalculatorButton type="operationButton" size="s1" label="=" handleClick={this.handleClick} />
-      </div>
+        </div>
       </div>
     );
   }

@@ -13,7 +13,9 @@ const Display = (props) => {
 };
 
 Display.propTypes = {
-  value: PropTypes.any,
+  next: PropTypes.string.isRequired,
+  total: PropTypes.string.isRequired,
+  operation: PropTypes.string.isRequired,
 };
 
 export default Display;
