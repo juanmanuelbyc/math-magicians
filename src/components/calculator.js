@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Display from './display';
 import CalculatorButton from './calculatorButton';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  
   const [obj, setObj] = useState({ total: null, next: null, operation: null });
-
   const clickHandler = (button) => {
     const newState = calculate(obj, button);
     setObj(newState);
-  }
+  };
 
   return (
     <div className="calculatorContainer">
@@ -38,6 +36,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
