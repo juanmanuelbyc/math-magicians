@@ -1,32 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-class Display extends React.Component {
-  render() {
-    const { value } = this.props;
-    return (
-      <div className="display">
-        <h1>{value}</h1>
-      </div>
-    );
-  }
+const Display = (props) => {
+  const value = props.value;
+  return (
+    <div className="display">
+      <h1>{value}</h1>
+    </div>
+  );
 }
 
 Display.defaultProps = {
-  value: 0
+  value: 0,
 };
 Display.propTypes = {
   value: PropTypes.string,
-}
+};
 
-class CalculatorButton extends React.Component {
-  render() {
-    const classes = `${this.props.size} ${this.props.type} button`;
+const CalculatorButton = (props) => {
+    const size = props.size;
+    const type = props.type;
+    const label = props.label;
+    const classes = `${size} ${type} button`;
     return (
-      <button type="button" className={classes}>{this.props.label}</button>
+      <button type="button" className={classes}>{label}</button>
     );
-  }
-}
+  };
 
 CalculatorButton.propTypes = {
   size: PropTypes.string.isRequired,
@@ -34,8 +33,7 @@ CalculatorButton.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-class ButtonsContainer extends React.Component {
-  render() {
+const ButtonsContainer = () => {
     return (
       <div className="buttonsContainer">
         <CalculatorButton type="characterButton" size="s1" label="AC" />
@@ -59,8 +57,7 @@ class ButtonsContainer extends React.Component {
         <CalculatorButton type="operationButton" size="s1" label="=" />
       </div>
     );
-  }
-}
+  };
 
 class Calculator extends React.Component {
   render() {
