@@ -12,7 +12,6 @@ class Calculator extends React.Component {
 
   handleClick(button) {
     const newState = calculate(this.state, button);
-    console.log(newState);
     this.setState(newState);
   }
 
