@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = (props) => {
-  const {value} = props;
+  const { value } = props;
   return (
     <div className="display">
       <h1>{value}</h1>
@@ -18,9 +18,7 @@ Display.propTypes = {
 };
 
 const CalculatorButton = (props) => {
-  const {size} = props;
-  const {type} = props;
-  const {label} = props;
+  const { size, type, label, } = props;
   const classes = `${size} ${type} button`;
   return (
     <button type="button" className={classes}>{label}</button>
