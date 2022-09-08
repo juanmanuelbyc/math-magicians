@@ -8,7 +8,7 @@ class Calculator extends React.Component {
       <div className="calculatorContainer">
         <Display />
         <ButtonsContainer />
-       </div>
+      </div>
     );
   }
 }
