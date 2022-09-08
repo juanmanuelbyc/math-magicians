@@ -56,10 +56,10 @@ const ButtonsContainer = () => (
 );
 
 const Calculator = () => (
-    <div className="calculatorContainer">
-      <Display />
-      <ButtonsContainer />
-    </div>
-  );
+  <div className="calculatorContainer">
+    <Display />
+    <ButtonsContainer />
+  </div>
+);
 
 export default Calculator;
