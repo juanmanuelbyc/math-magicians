@@ -2,13 +2,13 @@ import React from 'react';
 import Calculator from './components/calculator';
 
 class App extends React.Component {
-  render() { 
+  render() {
     return (
-     <div className="App">
-       <Calculator />
-     </div>
+      <div className="App">
+        <Calculator />
+      </div>
     );
   }
- }
+}
 
 export default App;

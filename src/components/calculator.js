@@ -1,12 +1,16 @@
 import React from 'react';
-import Display from './display.js'
-import ButtonsContainer from './buttonsContainer.js'
+import Display from './display';
+import ButtonsContainer from './buttonsContainer';
 
-const Calculator = () => (
-  <div className="calculatorContainer">
-    <Display />
-    <ButtonsContainer />
-  </div>
-);
+class Calculator extends React.Component {
+  render() {
+    return (
+      <div className="calculatorContainer">
+        <Display />
+        <ButtonsContainer />
+       </div>
+    );
+  }
+}
 
 export default Calculator;
