@@ -19,8 +19,8 @@ Read a random math-related quote.
 To get a local copy up and running follow these simple example steps.
 
 ````
-git clone https://github.com/PRATAP-KUMAR/javascript-capstone-project
-cd javascript-capstone-project
+git clone https://github.com/juanmanuelbyc/math-magicians
+cd math-magicians
 npm install
 npm start
 ````

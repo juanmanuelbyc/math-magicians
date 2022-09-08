@@ -13,9 +13,12 @@
 }
 
 .display {
+  display: flex;
   background-color: grey;
   color: antiquewhite;
-  text-align: end;
+  justify-content: end;
+  height: 50px;
+  gap: 5px;
 }
 
 .buttonsContainer {
