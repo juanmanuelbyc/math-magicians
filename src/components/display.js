@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
 
 const Display = (props) => {
-  const { value } = props;
+  const { next, total, operation } = props;
+
   return (
     <div className="display">
-      <h1>{value}</h1>
+      <h1>{total}</h1>
+      <h1>{operation}</h1>
+      <h1>{next}</h1>
     </div>
   );
 };
 
-Display.defaultProps = {
-  value: 0,
-};
 Display.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.any,
 };
 
 export default Display;
