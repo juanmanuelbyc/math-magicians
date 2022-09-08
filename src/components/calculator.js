@@ -18,7 +18,7 @@ Display.propTypes = {
 };
 
 const CalculatorButton = (props) => {
-  const { size, type, label, } = props;
+  const { size, type, label } = props;
   const classes = `${size} ${type} button`;
   return (
     <button type="button" className={classes}>{label}</button>
@@ -31,8 +31,7 @@ CalculatorButton.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-const ButtonsContainer = () => {
-  return (
+const ButtonsContainer = () => (
     <div className="buttonsContainer">
       <CalculatorButton type="characterButton" size="s1" label="AC" />
       <CalculatorButton type="characterButton" size="s1" label="+/-" />
@@ -55,17 +54,14 @@ const ButtonsContainer = () => {
       <CalculatorButton type="operationButton" size="s1" label="=" />
     </div>
   );
-};
 
-class Calculator extends React.Component {
-  render() {
+const Calculator = () => {
     return (
       <div className="calculatorContainer">
         <Display />
         <ButtonsContainer />
       </div>
     );
-  }
-}
+};
 
 export default Calculator;
