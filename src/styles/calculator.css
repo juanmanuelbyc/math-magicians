@@ -1,0 +1,18 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.calculatorPageContainer {
+ display: flex;
+ justify-content: space-between;
+ margin: 50px;
+ gap: 50px;
+}
+
+.calculatorContainer {
+ display: flex;
+ flex-direction: column;
+ width: 800px;
+}
