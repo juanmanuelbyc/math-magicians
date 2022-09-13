@@ -1,3 +1,5 @@
+import '../styles/home.css';
+
 const Home = () => (
   <div className="homePageContainer">
     <h2>Welcome to our page!</h2>

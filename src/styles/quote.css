@@ -1,0 +1,13 @@
+.quotePageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.quote {
+  font-size: xx-large;
+  text-align: center;
+}

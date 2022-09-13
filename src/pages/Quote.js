@@ -1,3 +1,5 @@
+import '../styles/quote.css';
+
 const Quote = () => (
   <div className="quotePageContainer">
     <p className="quote">

@@ -1,0 +1,23 @@
+.characterButton {
+ background-color: lightgrey;
+}
+
+.operationButton {
+ background-color: rgb(238, 129, 27);
+}
+
+.button {
+ text-align: center;
+ border-style: solid;
+ border-color: grey;
+ border-width: 1px;
+ height: 50px;
+}
+
+.s1 {
+ width: 25%;
+}
+
+.s2 {
+ width: 50%;
+}
