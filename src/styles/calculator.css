@@ -1,0 +1,18 @@
+.calculatorPageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  gap: 50px;
+}
+
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.buttonsContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}

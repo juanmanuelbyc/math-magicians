@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import '../styles/calculatorButton.css';
 
 class CalculatorButton extends React.Component {
   constructor(props) {

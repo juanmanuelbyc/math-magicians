@@ -1,0 +1,8 @@
+.display {
+  display: flex;
+  background-color: grey;
+  color: antiquewhite;
+  justify-content: flex-end;
+  height: 50px;
+  gap: 5px;
+}
