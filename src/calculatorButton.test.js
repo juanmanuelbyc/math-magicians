@@ -2,9 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import CalculatorButton from './components/calculatorButton';
 
-const clickHandler = (button) => {
-  const newState = calculate(obj, button);
-  setObj(newState);
+const clickHandler = () => {
 };
 
 it('renders correctly', () => {

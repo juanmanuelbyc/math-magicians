@@ -1,12 +1,8 @@
-'use strict'
-
 import React from 'react';
-import Calculator from './pages/Calculator.js';
 import renderer from 'react-test-renderer';
+import Calculator from './pages/Calculator';
 
 it('renders correctly', () => {
-  const tree = renderer.create(
-   <Calculator />
-  ).toJSON();
+  const tree = renderer.create(<Calculator />).toJSON();
   expect(tree).toMatchSnapshot();
 });
