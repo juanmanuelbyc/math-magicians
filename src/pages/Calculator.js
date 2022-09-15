@@ -4,7 +4,7 @@ import CalculatorButton from '../components/calculatorButton';
 import calculate from '../logic/calculate';
 import '../styles/calculator.css';
 
-const Calculator = () => {
+function Calculator() {
   const [obj, setObj] = useState({ total: null, next: null, operation: null });
   const clickHandler = (button) => {
     const newState = calculate(obj, button);
@@ -40,6 +40,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Calculator;

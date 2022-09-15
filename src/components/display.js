@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import '../styles/display.css';
 
-const Display = (props) => {
+function Display(props) {
   const { next, total, operation } = props;
 
   return (
@@ -12,7 +12,7 @@ const Display = (props) => {
       <h1>{next}</h1>
     </div>
   );
-};
+}
 
 Display.propTypes = {
   next: PropTypes.string.isRequired,
