@@ -25,11 +25,11 @@ describe('test operate logic for different cases', () => {
     expect(resultObj).toStrictEqual('-1.5');
   });
 
-  test('mod 28 % 6 = 4', () => {
-    const n1 = '28';
+  test('mod 29 % 6 = 5', () => {
+    const n1 = '29';
     const n2 = '6';
     const op = '%';
     const resultObj = operate(n1, n2, op);
-    expect(resultObj).toStrictEqual('4');
+    expect(resultObj).toStrictEqual('5');
   });
 });
